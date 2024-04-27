@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Sakshi's Responsive Portfolio</title>
+</head>
+<body>
+    <!--Header design-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--Home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Sakshi</h1>
+            <h3>And I'm a <span id="multiple"></span></h3>
+            <p>An enthusiastic individual with a solid academic foundation and a deep interest in cutting-edge technologies. Always looking for opportunities to utilize technical expertise, problem-solving abilities, and teamwork skill in different IT projects.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sakshi-s24/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>           
+                <a href="https://github.com/itz-Sakshi" target="_blank"><i class="fa-brands fa-github"></i></a>           
+                <a href="https://www.instagram.com/sakshi241102/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+            </div>
+            <a href="resume.docx" download class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/bg.png" alt="Programmer Girl">
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="Programmer girl">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p>I'm passionate about various subjects related to technology that keep me engaged and motivated. I have a solid foundation in web development and a passion for creating exceptional user experiences. Front-end Web Development with responsive and mobile-first design and coding in general are among my top interests.</p>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="education-content">
+            <h2 class="heading">My <span>Education</span></h2>
+            <div class="education-cards">
+                <div class="education-card">
+                    <i class="fa-solid fa-school"></i>
+                    <h3>Seneca College</h3>
+                    <p>Diploma: Computer Programming</p>
+                    <p>Graduation Year: 2024</p>
+                </div>
+                <div class="education-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Harvard University</h3>
+                    <p>Course: CS50x Introduction to Computer Science</p>
+                    <p>Completion Year: 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills section-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fa-brands fa-html5"></i>
+                <h1>Web Development (HTML, CSS and JS)</h1>
+            </div>
+            <div class="skills-box">
+                <i class="fa-solid fa-palette"></i>
+                <h1>User Interface-User Experience design</h1>
+            </div>
+            <div class="skills-box">
+                <i class="fa-solid fa-code"></i>
+                <h1>Languages (C, C++, Python, JS and SQL)</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects section design-->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="images/img1.jpeg" alt="NextJS project">
+                <div class="projects-layer">
+                    <h4>Museum Art Search App</h4>
+                    <a href="https://my-app-sakshi-museumsearch.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/img2.jpeg" alt="">
+                <div class="projects-layer">
+                    <h4>Schedule Tracker App</h4>
+                    <a href="https://scheduletracker.onrender.com/login" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/img3.jpeg" alt="OOP-Final-project">
+                <div class="projects-layer">
+                    <h4>Library Tracking System</h4>
+                    <a href="https://github.com/itz-Sakshi/OOP244WorkshopsProjectSummer2023/tree/main/ms5" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+    
+        <form id="contactForm" action="https://example.com/send-email" method="POST">
+            <div class="input-box">
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="emailAddress" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="mobileNumber" placeholder="Mobile Number" required>
+                <input type="text" name="emailSubject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+    <!--Footer design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Sakshi | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!--Typed JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--scroll reveal JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
